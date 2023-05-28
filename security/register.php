@@ -135,8 +135,10 @@ $error=false;
     </div>
     <div class="mb-3">
         <label for="picture_profil" class="form-label">Photo de profil</label>
-        <input name="picture_profil" type="file" class="form-control" id="picture_profil">
+        <input onchange="loadFile()" name="picture_profil" type="file" class="form-control" id="picture_profil">
         <small class="text-danger"><?= $picture ?? ""; ?></small>
+        <div class="text-center">
+        <img  id="image"  class="w-25 rounded mt-3 rounded-circle " alt=""></div>
     </div>
 
     <div class="mb-3 form-check">
@@ -146,5 +148,17 @@ $error=false;
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
+
+
+
+
+<script>
+    let loadFile = function()
+    {
+        let image = document.getElementById('image');
+
+        image.src = URL.createObjectURL(event.target.files[0]);
+    }
+</script>
 
 <?php require_once '../inc/footer.inc.php'; ?>
