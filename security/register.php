@@ -9,7 +9,7 @@ $error=false;
        $nickname='Le pseudo est obligatoire';
        $error=true;
     }else{
-        if (strlen($_POST['nickname']) <3 || strlen($_POST['nickname']) >10 ){
+        if (strlen($_POST['nickname']) < 3 || strlen($_POST['nickname']) >10 ){
             $nickname='Le pseudo doit être compris entre 3 et 10 caractères';
             $error=true;
         }
@@ -94,19 +94,6 @@ $error=false;
               ':role'=>'ROLE_USER'
 
         ), 'ggg');
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 

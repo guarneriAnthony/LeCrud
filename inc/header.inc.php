@@ -25,10 +25,10 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="<?=  BASE_PATH.'post_annonces/annonces.php'; ?>">Déposer une annonce</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="<?=  BASE_PATH.'post_annonces/annonce_publish.php'; ?>">Liste annonces</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About</a>
@@ -37,8 +37,9 @@
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">ADMIN</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="<?=  BASE_PATH.'back/userList.php'; ?>">Gestion utilisateur</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="<?=  BASE_PATH.'exo/index.php'; ?>">Exercices</a>
+                        <a class="dropdown-item" href="<?=  BASE_PATH.'exo/hello_world.php'; ?>">Hello world</a>
+                        <a class="dropdown-item" href="<?=  BASE_PATH.'exo/logique.php'; ?>">Logique</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Separated link</a>
                     </div>
